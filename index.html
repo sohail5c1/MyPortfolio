@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - website</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> -->
+    <!-- font-awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <!-- <img src="bgImg.jpg" alt="imgcc"> -->
+    <header id="header">
+        <a href="#" class="logo">Portfolio</a>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skill">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact me</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <section class="section">
+        <div class="container">
+            <h2>Hello! It's</h2><br>
+            <h2><span>MOHAMMAD SOHAIL</span></h2>
+            <h3>And I'm a</h3>
+            <p>software developer with trained skills in <br>
+            Java Python MySql and Frontend Development...</p>
+        </div>
+
+        <div class="pic">
+            <img src="sohail.jfif" alt="srcs">
+        </div>
+
+        
+        
+    </section>
+
+    <div id="about">
+        <div class=".container2">
+            <div class="row">
+                <div class="col1">
+                    <img src="aboutpic.jfif" alt="">
+                </div>
+                <div class="col2">
+                    <h1>About</h1>
+                    <p>
+                        Hi, I'm Mohammad Sohail, a passionate frontend developer with a 
+                        solid foundation in web development.I specialize in building responsive 
+                        and user-friendly web applications using HTML, CSS, and JavaScript. 
+                        Alongside my frontend expertise, I have experience working with Python and Java, 
+                        as well as managing databases using MySQL and deploying projects with AWS.
+
+                        With a strong technical background and hands-on experience in both 
+                        web development and Python projects, I enjoy turning complex problems into simple, 
+                        elegant solutions. Whether it's crafting smooth user interfaces or optimizing the backend, 
+                        I thrive on creating efficient, scalable, and maintainable code.
+                    </p>
+                </div>
+
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- ----------skills---------- -->
+    <section id="skill">
+        <h1>My Skills</h1>
+        <div class="skill_group">
+            <div class="skills" style="color: red;">HTML <br><span>Intermediate</span></div>
+            <div class="skills" style="color: rgb(9, 122, 167);">CSS <br><span>Intermediate</span></div>
+            <div class="skills" style="color: yellow;">JS <br><span>Intermediate</span></div>
+            <div class="skills" style="color: rgb(99, 210, 251);">React JS <br><span>Intermediate</span></div>
+            <div class="skills" style="color: yellow;">Python <br><span>Advanced</span></div>
+            <div class="skills" style="color: red;">Java <br><span>Intermediate</span></div>
+            <div class="skills" style="color: blue;">MySql <br><span>basics</span></div>
+            <div class="skills" style="color: rgb(218, 144, 6);">aws <br><span>basics</span></div>
+
+        </div>
+    </section>
+
+    <!------- Projects ------>
+    <section id="projects">
+        <h1>My Projects</h1>
+        <div class="projects_group">
+            <div class="project">
+                <img src="img1.jpg" alt="Project 1">
+                <div class="overlay">
+                    <h3>Jarvis vir assistant</h3>
+                    <a href="https://github.com/sohail5c1/Jarvis/blob/main/jarvis.py" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="port.jpeg" alt="Project 2">
+                <div class="overlay">
+                    <h3>Portfolio website</h3>
+                    <a href="https://link-to-project2.com" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="img3.jpg" alt="Project 3">
+                <div class="overlay">
+                    <h3>pythonTextCapture</h3>
+                    <a href="https://github.com/sohail5c1/pythonTextCapture/blob/master/newcode.py" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- -----------Contact me ------------ -->
+    <div id="contact">
+        <div class="container_cont">
+            <div class="row">
+
+                <div class="cont-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>shaik09sohail@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>6281607768</p>
+                    <div class="social-icons">
+                        <!-- <a href=""><i class="fa-brands fa-facebook"></i></a> -->
+                        <a href="https://www.instagram.com/sohail_codes/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/feed/"><i class="fa-brands fa-linkedin"></i></a>
+                        <!-- https://www.linkedin.com/in/mohammad-sohail-202894284/ -->
+                        
+
+                    </div>
+                    <a href="sohailResume.pdf" download class="cv">Download CV</a>
+                </div>
+                <div class="cont-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required >
+                        <input type="text" name="email" placeholder="Your email" required >
+                        <textarea name="Message" rows="5" placeholder="Your Message"></textarea>
+                        <button type="submit" class="sub-btn">Submit</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+        <p>Copyright <i class="fa-regular fa-copyright"></i> Mohammad Sohail</p>
+
+    </footer>
+
+    <script>
+        form.reset()
+    </script>
+
+</body>
+</html>

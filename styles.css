@@ -1,0 +1,506 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+#header{
+    top: 0;
+    left: 0;
+    width: 100vw;
+    padding: 20px 10%;
+    position: fixed;
+    background: transparent;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 100;
+    background-color: rgb(3 12 42);
+}
+.logo{
+    position: relative;
+    font-size: 25px;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar ul li{
+    display: inline-block;
+    
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 25px;
+    transition: .3s;
+    
+}
+
+.navbar ul li a{
+    color: white;
+    text-decoration: none;
+}
+.navbar ul li a:hover{
+    color: rgb(52, 231, 231);
+}
+
+
+.section{
+    width: 100vw;
+    height: 100vh;
+    background: url(bgimage1.avif) no-repeat;
+    position: relative;
+    justify-content: space-between;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 70px 10% 0;
+    color: white;
+}
+.section span{
+    color: yellow;
+}
+.container{
+    font-size: 24px;
+}
+/* div */
+.pic{
+    
+    height: 55vh;
+    border-radius: 110px;
+    flex-basis: 50%;
+    position: relative;
+    overflow: hidden;
+}
+.pic img{
+    object-fit: cover;
+    width: 45vw;
+
+}
+
+@media (max-width: 426px){
+    .pic{
+        border-radius: 10px;
+    }
+    .container{
+        flex-basis: 70%;
+        font-size: 12px;
+        padding-right: 5px;
+    }
+    .navbar ul li{
+        font-size: 10px;
+    }
+}
+
+/* ----------------about---------------------- */
+#about{
+    
+    /* background-size: cover;
+    background-position: center; */
+    padding: 80px 0;
+    background: #000;
+    width: 100vw;
+    
+   
+
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.col1{
+    flex-basis: 35%;
+    margin-left: 10%;
+}
+.col1 img{
+    width: 80%;
+    border-radius: 50px;
+}
+.col2{
+    flex-basis: 55%;
+}
+.col2 h1{
+    color: white;
+    font-weight: 600;
+    font-size: 60px;
+}
+.col2 p{
+    color: white;
+    padding-top: 22px;
+    padding-right: 110px;
+    font-size: 20px;
+}
+/* for mobile*/
+@media (max-width: 426px) {
+    .col2 h1{
+        margin: 0 65px;
+        font-size: 23px;
+        margin: 10px 0;
+    }
+    .col2 p{
+        font-size: 13px;
+        
+        padding: 5px;
+        display: inline;
+    }
+
+    .col1 img{
+        margin: 100px 0;
+        border-radius: 15px;
+    }
+    
+}
+
+/* ------------Skills---------- */
+
+#skill{
+    
+    width: 100vw;
+    padding: 50px 0;
+    position: relative;
+    background: black
+    
+
+}
+#skill h1{
+    /* margin-left: 42%; */
+    
+    color: white;
+    text-decoration-line: underline;
+    font-weight: 22px;
+    font-size: 38px;
+    margin: 30px 0;
+}
+
+/*
+.skill_group{
+    width: 100vw;
+    height: 100vh;
+    
+    /* display: grid;
+    grid-template-columns: repeat(3,3fr);
+    align-items: center;
+    gap: 2.5rem; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* align-content: flex-start; 
+
+
+}
+
+.skill_group div{
+    width: 16vw;
+    height: 26vh;
+    margin: 22px;
+    border: 2px solid cyan;
+    border-radius: 22px;
+
+    
+}
+.skills{
+    color: white;
+    text-align: center;
+    font-size: 55px;
+    font-weight: 600;
+    padding: 34px;
+}
+
+.skills span{
+    color: white;
+    font-size: 14px;
+    font-weight: 100;
+    opacity: 0.5;
+}
+*/                             
+
+/* Container styling for the skill section */
+.skill_group {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Skill card styling */
+.skill_group div {
+    height: 26vh;
+    border: 2px solid cyan;
+    border-radius: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Styling for individual skill text */
+.skills {
+    color: white;
+    font-size: 2rem; /* Adjusted to be more readable */
+    font-weight: 600;
+}
+
+/* Styling for skill level description */
+.skills span {
+    color: white;
+    font-size: 1rem;
+    font-weight: 100;
+    opacity: 0.7;
+}
+
+/* Responsive heading */
+#skill h1 {
+    text-align: center;
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+/* Optional: If you want to adjust font sizes for mobile */
+@media (max-width: 426px) {
+    .skills {
+        font-size: 1.1rem; /* Smaller font for mobile */
+    }
+    .skills span {
+        font-size: 0.6rem;
+    }
+}
+
+
+.skills:hover{
+    box-shadow: 2px 15px 19px 3px rgba(9, 163, 187, 0.2), 2px 14px 29px 3px rgba(7, 157, 162, 0.19);
+    /* box-shadow: 16px 12px 19px 9px rgba(17, 177, 221, 0.2); */
+}
+
+/* -------------------projects---------------- */
+
+/* Styling for the projects section */
+#projects {
+    width: 100vw;
+    padding: 50px 0;
+    text-align: center;
+    background-color: #000000;
+}
+
+#projects h1 {
+    color: #ffffff;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    margin: 40px 0;
+
+}
+
+/* Projects container grid */
+.projects_group {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid layout */
+    gap: 30px;
+    margin: 30px 30px;
+}
+
+/* Project card styling */
+.project {
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Project image styling */
+.project img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+/* Overlay for the hover effect */
+.project .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 15px;
+}
+
+/* Hover effect on the project */
+.project:hover img {
+    transform: scale(1.1); /* Zooms the image on hover */
+}
+
+.project:hover .overlay {
+    opacity: 1; /* Shows the overlay on hover */
+}
+
+/* Styling for the project link inside the overlay */
+.project .overlay a {
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+    /* background-color: #c60d0d; */
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.project .overlay h3{
+    color: white;
+}
+.project .overlay a:hover {
+    color: aqua;
+}
+
+/* Media Queries for responsive design */
+
+/* For tablets and smaller devices */
+@media (max-width: 768px) {
+    #projects {
+        padding: 40px 5%; /* Reduce padding on smaller screens */
+    }
+
+    #projects h1 {
+        font-size: 2rem; /* Reduce font size for the heading */
+    }
+
+    .project .overlay a {
+        font-size: 1.2rem; /* Adjust link font size */
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 426px) {
+    .projects_group {
+        grid-template-columns: 1fr; /* Single column layout for small screens */
+        
+    }
+
+    #projects h1 {
+        font-size: 1.8rem; /* Further reduce font size */
+    }
+
+    .project img {
+        width: 100%;
+        height: auto; /* Ensure images maintain their aspect ratio */
+    }
+
+    .project .overlay a {
+        font-size: 1rem; /* Smaller link font for mobile */
+        padding: 8px 16px; /* Adjust padding for better fit */
+    }
+}
+
+/* -----------about---------- */
+#contact{
+    background: black;
+    width: 100vw;
+}
+.cont-left{
+    flex-basis: 36%;
+}
+.cont-left h1{
+    margin-left: 25%;
+    color: white;
+}
+.cont-left p{
+    color: white;
+    margin-top: 20px;
+    margin-left: 20%;
+}
+.cont-left p i{
+    margin-left: 20px;
+    margin-right: 15px;
+    font-size: 20px;
+    color: rgb(5 55 218)
+}
+.social-icons{
+    margin-top: 20px;
+    margin-left: 22%;
+}
+.social-icons a{
+    color: #0077cc;
+    text-decoration: none;
+    font-size: 25px;
+    display: inline-block;
+    padding: 10px;
+}
+.social-icons a:hover{
+    color: aqua;
+    transform: translateY(-5px);
+}
+.cv{
+    display: inline-block;
+    background: aqua;
+    margin: 20px;
+    margin-left: 22%;
+    padding: 15px;
+    border: 2px solid aqua;
+    border-radius: 25px;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+.cv:hover{
+    /* transform: translateY(-5px); */
+    box-shadow: rgba(4, 179, 192, 0.656) 3px 7px 13px;
+}
+.cont-right{
+    flex-basis: 60%;
+}
+.cont-right form{
+    width: 80%;;
+}
+form input, form textarea{
+    margin: 20px 0;
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 7px;
+
+}
+form .sub-btn{
+    padding: 16px 16px;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    cursor: pointer;
+    border-radius: 15px;
+    background: cyan;
+}
+form .sub-btn:hover{
+    box-shadow: rgba(4, 179, 192, 0.656) 3px 5px 9px;
+}
+#footer{
+    width: 100vw;
+    background: #262626;
+    color: #fff;
+    padding: 4px;
+    font-size: 10px;
+    text-align: center;
+}
+
+@media (max-width: 426px){
+    .cont-left{
+        flex-basis: 71%;
+    }
+    .cont-right{
+        margin: 0 20px;
+        flex-basis: 100%;
+    }
+}
+
