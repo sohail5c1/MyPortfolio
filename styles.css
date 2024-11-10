@@ -79,7 +79,10 @@
     width: 45vw;
 
 }
-
+.box{
+    display: flex;
+    justify-content: space-between;
+}
 @media (max-width: 426px){
     .pic{
         border-radius: 15px;
