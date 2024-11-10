@@ -85,6 +85,7 @@
 @media (max-width: 600px){
     .pic{
         border-radius: 15px;
+        height: auto;
     }
     .container{
         font-size: 12px;
