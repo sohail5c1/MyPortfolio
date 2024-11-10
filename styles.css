@@ -142,6 +142,7 @@
     padding-top: 22px;
     padding-right: 110px;
     font-size: 20px;
+    text-align:justify;
 }
 /* for mobile*/
 @media (max-width: 600px) {
