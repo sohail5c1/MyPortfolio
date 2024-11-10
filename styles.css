@@ -67,7 +67,6 @@
 }
 /* div */
 .pic{
-    
     height: 55vh;
     border-radius: 110px;
     flex-basis: 50%;
@@ -83,7 +82,7 @@
     display: flex;
     justify-content: space-between;
 }
-@media (max-width: 426px){
+@media (max-width: 600px){
     .pic{
         border-radius: 15px;
     }
@@ -144,7 +143,7 @@
     font-size: 20px;
 }
 /* for mobile*/
-@media (max-width: 426px) {
+@media (max-width: 600px) {
     .row {
         display: grid;
         margin: 20px;
@@ -464,7 +463,7 @@ form .sub-btn:hover{
     text-align: center;
 }
 
-@media (max-width: 426px){
+@media (max-width: 600px){
     .cont-left{
         flex-basis: 71%;
     }
