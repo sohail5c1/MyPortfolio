@@ -82,15 +82,22 @@
 
 @media (max-width: 426px){
     .pic{
-        border-radius: 10px;
+        border-radius: 15px;
     }
     .container{
-        flex-basis: 70%;
         font-size: 12px;
-        padding-right: 5px;
+        padding: 5px;
+        order: 2;
     }
     .navbar ul li{
         font-size: 10px;
+    }
+    .box{
+        margin: 0 15%;
+        margin-top: 20%;
+        display: grid;
+        gap: 5px;
+        order: 2;
     }
 }
 
@@ -135,21 +142,19 @@
 }
 /* for mobile*/
 @media (max-width: 426px) {
-    .col2 h1{
-        margin: 0 65px;
-        font-size: 23px;
-        margin: 10px 0;
-    }
-    .col2 p{
-        font-size: 13px;
+    .row {
+        display: grid;
+        margin: 20px;
         
-        padding: 5px;
-        display: inline;
     }
-
-    .col1 img{
-        margin: 100px 0;
-        border-radius: 15px;
+    .col1 {
+        flex-basis: 35%;
+        margin-left: 20%;
+        width: 60vw;
+    }
+    .col2 p {
+        padding-right: 20px;
+        font-size: 15px;
     }
     
 }
@@ -173,50 +178,7 @@
     font-weight: 22px;
     font-size: 38px;
     margin: 30px 0;
-}
-
-/*
-.skill_group{
-    width: 100vw;
-    height: 100vh;
-    
-    /* display: grid;
-    grid-template-columns: repeat(3,3fr);
-    align-items: center;
-    gap: 2.5rem; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    /* align-content: flex-start; 
-
-
-}
-
-.skill_group div{
-    width: 16vw;
-    height: 26vh;
-    margin: 22px;
-    border: 2px solid cyan;
-    border-radius: 22px;
-
-    
-}
-.skills{
-    color: white;
-    text-align: center;
-    font-size: 55px;
-    font-weight: 600;
-    padding: 34px;
-}
-
-.skills span{
-    color: white;
-    font-size: 14px;
-    font-weight: 100;
-    opacity: 0.5;
-}
-*/                             
+}         
 
 /* Container styling for the skill section */
 .skill_group {
@@ -404,6 +366,11 @@
 #contact{
     background: black;
     width: 100vw;
+}
+.row1{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 .cont-left{
     flex-basis: 36%;
